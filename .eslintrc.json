@@ -6,11 +6,15 @@
     "extends": [
         "eslint:recommended",
         "prettier",
+        "plugin:react/jsx-runtime",
         "plugin:react/recommended"
     ],
     "overrides": [
     ],
     "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
         "ecmaVersion": "latest",
         "sourceType": "module"
     },
@@ -18,7 +22,8 @@
         "react"
     ],
     "rules": {
-        "react/react-in-jsx-scope": "off",
-        "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
+        "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+        "react/prop-types": 0,
+        "react/destructuring-assignment": [0]
     }
 }
