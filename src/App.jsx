@@ -6,6 +6,8 @@ import CenterblockContent from './scripts/centerblock/centerblockContent';
 import Personal from './scripts/personal/personal';
 import SidebarBlock from './scripts/sidebar/sidebarBlock';
 import Menu from './scripts/burgerMenu/menu';
+import BarPlayer from './scripts/barPlayer/bar';
+import BarVolume from './scripts/barPlayer/barVolume';
 
 
 function App() {
@@ -32,7 +34,8 @@ function App() {
             <SidebarBlock/>
           </div>
       </main>
-      {/* <BarPlayer/> */}
+      <BarPlayer/>
+      <BarVolume />
       <footer/>
       </div>
     </div>
