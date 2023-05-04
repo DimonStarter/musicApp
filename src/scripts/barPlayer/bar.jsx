@@ -11,60 +11,60 @@ function BarPlayer() {
         <div className={s.player_block}>
             <div className={s.player}>
                 <div className={s.player__controls}>
-                    <div className="player__btn-prev">
-                        <svg className="player__btn-prev-svg" alt="prev">
+                    <div className={s.player__btn_prev}>
+                        <svg className={s.player__btn_prev_svg} alt="prev">
                             <use xlinkHref={`${sprite}#icon-prev`}></use>
                         </svg>
                     </div>
-                    <div className="player__btn-play _btn">
-                        <svg className="player__btn-play-svg" alt="play">
+                    <div className={s.player__btn_play}>
+                        <svg className={s.player__btn_play_svg} alt="play">
                             <use xlinkHref={`${sprite}#icon-play`}></use>
                         </svg>
                     </div>
-                    <div className="player__btn-next">
-                        <svg className="player__btn-next-svg" alt="next">
+                    <div className={s.player__btn_next}>
+                        <svg className={s.player__btn_next_svg} alt="next">
                             <use xlinkHref={`${sprite}#icon-next`}></use>
                         </svg>
                     </div>
-                    <div className="player__btn-repeat _btn-icon">
-                        <svg className="player__btn-repeat-svg" alt="repeat">
+                    <div className={s.player__btn_repeat}>
+                        <svg className={s.player__btn_repeat_svg} alt="repeat">
                             <use xlinkHref={`${sprite}#icon-repeat`}></use>
                         </svg>
                     </div>
-                    <div className="player__btn-shuffle _btn-icon">
-                        <svg className="player__btn-shuffle-svg" alt="shuffle">
+                    <div className={s.player__btn_shuffle}>
+                        <svg className={s.player__btn_shuffle_svg} alt="shuffle">
                             <use xlinkHref={`${sprite}#icon-shuffle`}></use>
                         </svg>
                     </div>
                 </div>
-                <div className="player__track-play track-play">
-                    <div className="track-play__contain">
-                    <div className="track-play__image">
+                <div className={s.player__track_play}>
+                    <div className={s.track_play__contain}>
+                    <div className={s.track_play__image}>
                         <SkeletonLoading width={51} height={51}>
-                            <svg className="track-play__svg" alt="music">
+                            <svg className={s.track_play__svg} alt="music">
                                 <use xlinkHref={`${sprite}#icon-note`}></use>
                             </svg>
                         </SkeletonLoading>
                         </div>
-                        <div className="track-play__author">
+                        <div className={s.track_play__author}>
                         <SkeletonLoading width={50} height={15}>
-                            <a className="track-play__author-link" href="http://">Ты та...</a>
+                            <a className={s.track_play__author_link} href="http://">Ты та...</a>
                             </SkeletonLoading>
                         </div>
-                        <div className="track-play__album">
+                        <div className={s.track_play__album}>
                         <SkeletonLoading width={50} height={15}>
-                            <a className="track-play__album-link" href="http://">Баста</a>
+                            <a className={s.track_play__album_link} href="http://">Баста</a>
                             </SkeletonLoading>
                         </div>
                     </div>
-                    <div className="track-play__like-dis">
-                        <div className="track-play__like _btn-icon">
-                            <svg className="track-play__like-svg" alt="like">
+                    <div className={s.track_play__like_dis}>
+                        <div className={s.track_play__like}>
+                            <svg className={s.track_play__like_svg} alt="like">
                                 <use xlinkHref={`${sprite}#icon-like`}></use>
                             </svg>
                         </div>
-                        <div className="track-play__dislike _btn-icon">
-                            <svg className="track-play__dislike-svg" alt="dislike">
+                        <div className={s.track_play__dislike}>
+                            <svg className={s.track_play__dislike_svg} alt="dislike">
                                 <use xlinkHref={`${sprite}#icon-dislike`}></use>
                             </svg>
                         </div>

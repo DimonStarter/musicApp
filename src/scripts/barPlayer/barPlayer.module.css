@@ -49,66 +49,112 @@
     align-items: center;
 }
 
-.player__btn-prev {
+.player__btn_prev {
     margin-right: 23px;
+    padding: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.player__btn-prev-svg {
+.player__btn_prev_svg {
     width: 15px;
     height: 14px;
 }
 
-.player__btn-play {
+.player__btn_play {
     margin-right: 23px;
+    cursor: pointer;
 }
 
-.player__btn-play-svg {
+.player__btn_play_svg {
     width: 22px;
     height: 20px;
     fill: #D9D9D9;
 }
 
-.player__btn-next {
+.player__btn_next {
     margin-right: 28px;
     fill: #a53939;
 }
 
-.player__btn-next-svg {
+.player__btn_next_svg {
     width: 15px;
     height: 14px;
     fill: inherit;
     stroke: #D9D9D9;
 }
 
-.player__btn-repeat {
+.player__btn_repeat {
     margin-right: 24px;
 }
 
-.player__btn-repeat-svg {
+.player__btn_repeat:hover svg {
+    fill: transparent;
+    stroke: #ACACAC;
+    cursor: pointer;
+  }
+
+  .player__btn_repeat:active svg {
+    fill: transparent;
+    stroke: #FFFFFF;
+    cursor: pointer;
+  }
+
+  .player__btn_repeat:active .track_play__like_svg,
+  .player__btn_repeat:active .track_play__dislike_svg {
+  fill: #696969;
+  stroke: #FFFFFF;
+  cursor: pointer;
+}
+
+.player__btn_repeat_svg {
     width: 18px;
     height: 12px;
     fill: transparent;
     stroke: #696969;
     }
 
-.player__btn-shuffle {
+.player__btn_shuffle {
     display: flex;
     align-items: center;
 }
 
-.player__btn-shuffle-svg {
+.player__btn_shuffle:hover svg {
+    fill: transparent;
+    stroke: #ACACAC;
+    cursor: pointer;
+  }
+
+  .player__btn_shuffle:active svg {
+    fill: transparent;
+    stroke: #FFFFFF;
+    cursor: pointer;
+  }
+  
+  .player__btn_shuffle:active .track_play__like_svg,
+  .player__btn_shuffle:active .track_play__dislike_svg {
+    fill: #696969;
+    stroke: #FFFFFF;
+    cursor: pointer;
+  }
+
+.player__btn_shuffle_svg {
     width: 19px;
     height: 12px;
     fill: transparent;
     stroke: #696969;
 }
 
-.player__track-play {
+.player__track_play {
     display: flex;
     flex-direction: row;
 }
 
-.track-play__contain {
+.track_play__contain {
     width: auto;
     display: grid;
     grid-template-columns: auto 1fr;
@@ -116,7 +162,7 @@
     align-items: center;
 }
 
-.track-play__image {
+.track_play__image {
     width: 51px;
     height: 51px;
     background-color: #313131;
@@ -127,7 +173,7 @@
     grid-area: image;
 }
 
-.track-play__svg {
+.track_play__svg {
     width: 18px;
     height: 17px;
     fill: transparent;
@@ -135,12 +181,12 @@
 }
 
 
-.track-play__author {
+.track_play__author {
     grid-area: author;
     min-width: 49px;
 }
 
-.track-play__author-link {
+.track_play__author_link {
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -149,12 +195,12 @@
     white-space: nowrap;
 }
 
-.track-play__album {
+.track_play__album {
     grid-area: album;
     min-width: 49px;
 }
 
-.track-play__album-link {
+.track_play__album_link {
     font-style: normal;
     font-weight: 400;
     font-size: 13px;
@@ -162,17 +208,36 @@
     color: #FFFFFF;
 }
 
-.track-play__like-dis {
+.track_play__like_dis {
     display: flex;
     flex-direction: row;
     align-items: center;
     margin-left: 26%;
 }
 
-.track-play__like,
-.track-play__dislike {
+.track_play__like,
+.track_play__dislike {
     padding: 5px;
 }
+
+._track_play__like:hover svg {
+    fill: transparent;
+    stroke: #ACACAC;
+    cursor: pointer;
+  }
+
+  ._track_play__like:active svg {
+    fill: transparent;
+    stroke: #FFFFFF;
+    cursor: pointer;
+  }
+  
+  ._track_play__like .track_play__like_svg,
+  ._track_play__like .track_play__dislike_svg {
+    fill: #696969;
+    stroke: #FFFFFF;
+    cursor: pointer;
+  }
 
 .track-play__like-svg {
     width: 14px;
@@ -181,9 +246,28 @@
     stroke: #696969;
 }
 
-.track-play__dislike {
+.track_play__dislike {
     margin-left: 28.5px;
     }
+
+    .track_play__dislike:hover svg {
+        fill: transparent;
+        stroke: #ACACAC;
+        cursor: pointer;
+      }
+
+      .track_play__dislike:active svg {
+        fill: transparent;
+        stroke: #FFFFFF;
+        cursor: pointer;
+      }
+      
+      .track_play__dislike:active .track_play__like_svg,
+      .track_play__dislike:active .track_play__dislike_svg {
+        fill: #696969;
+        stroke: #FFFFFF;
+        cursor: pointer;
+      }
 
 .track-play__dislike-svg {
     width: 14.34px;
@@ -213,8 +297,21 @@
 
 .volume__progress {
     width: 109px;
+    cursor: pointer;
 }
 
-.volume__progress-line {
+.volume__progress_line {
     width: 109px;
+    cursor: pointer;
 }
+
+.bar__volume_block {
+    width: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0 92px 0 0;
+  }

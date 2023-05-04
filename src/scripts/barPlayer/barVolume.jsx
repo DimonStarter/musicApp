@@ -8,15 +8,15 @@ function BarVolume() {
         <div className={s.player_progress}></div>
         <div className={s.player_block}></div>
         <div className={s.player}>
-        <div className="bar__volume-block volume">
-            <div className="volume__content">
-                <div className="volume__image">
-                    <svg className="volume__svg" alt="volume">
+        <div className={s.bar__volume_block}>
+            <div className={s.volume__content}>
+                <div className={s.volume__image}>
+                    <svg className={s.volume__svg} alt="volume">
                         <use xlinkHref={`${sprite}#icon-volume`}></use>
                     </svg>
                 </div>
-                <div className="volume__progress _btn">
-                    <input className="volume__progress-line _btn" type="range" name="range"/>
+                <div className={s.volume__progress}>
+                    <input className={s.volume__progress_line} type="range" name="range"/>
                 </div>
             </div>
             </div>
