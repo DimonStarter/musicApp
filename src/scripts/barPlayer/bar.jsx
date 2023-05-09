@@ -70,6 +70,18 @@ function BarPlayer() {
                         </div>
                     </div>
                 </div>
+                <div className={s.bar__volume_block}>
+                    <div className={s.volume__content}>
+                        <div className={s.volume__image}>
+                            <svg className={s.volume__svg} alt="volume">
+                                <use xlinkHref={`${sprite}#icon-volume`}></use>
+                            </svg>
+                        </div>
+                    <div className={s.volume__progress}>
+                        <input className={s.volume__progress_line} type="range" name="range"/>
+                    </div>
+                </div>
+        </div>
             </div>
         </div>
         </div>

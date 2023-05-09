@@ -152,6 +152,8 @@
 .player__track_play {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    padding: 14px 65px 0px 0px;
 }
 
 .track_play__contain {
@@ -239,7 +241,7 @@
     cursor: pointer;
   }
 
-.track-play__like-svg {
+.track_play__like_svg {
     width: 14px;
     height: 12px;
     fill: transparent;
@@ -250,26 +252,28 @@
     margin-left: 28.5px;
     }
 
-    .track_play__dislike:hover svg {
+.track_play__dislike:hover svg {
         fill: transparent;
         stroke: #ACACAC;
         cursor: pointer;
-      }
+}
 
-      .track_play__dislike:active svg {
+.track_play__dislike:active svg {
         fill: transparent;
         stroke: #FFFFFF;
         cursor: pointer;
-      }
+}
       
-      .track_play__dislike:active .track_play__like_svg,
-      .track_play__dislike:active .track_play__dislike_svg {
+.track_play__dislike:active .track_play__like_svg,
+.track_play__dislike:active .track_play__dislike_svg {
         fill: #696969;
         stroke: #FFFFFF;
         cursor: pointer;
-      }
+        width: 12px;
+        height: 10px;
+}
 
-.track-play__dislike-svg {
+.track_play__dislike_svg {
     width: 14.34px;
     height: 13px;
     fill: transparent;
@@ -281,6 +285,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
+    margin-bottom: 20px;
 }
 
 .volume__image {
@@ -313,5 +318,6 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: 0 92px 0 0;
+    padding: 0px 0px 0px 1144px;
+    justify-content: flex-end;
   }
