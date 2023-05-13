@@ -1,6 +1,6 @@
 import React from 'react';
 import s from './search.module.css';
-import sprite from '../../assets/icon/sprite.svg'
+import sprite from '../../assets/img/icon/sprite.svg'
 
 function Search() {
   return (

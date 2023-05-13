@@ -21,19 +21,6 @@ button,
     cursor: pointer;
 }
 
-ul li {
-    list-style: none;
-}
-
-@font-face {
-    font-family: 'StratosSkyeng';
-    src: local('StratosSkyeng'), local('StratosSkyeng'),
-        url('./assets/fonts/Stratos-Regular.woff') format('woff'),
-        url('./assets/fonts/Stratos-Regular.woff2') format('woff2');
-    font-weight: 400;
-    font-style: normal;
-}
-
 #root {
     background-color:#181818;
 }
@@ -46,6 +33,14 @@ body {
   color: #FFFFFF;
 }
 
+@font-face {
+    font-family: 'StratosSkyeng';
+    src: local('StratosSkyeng'), local('StratosSkyeng'),
+        url('../assets/style/fonts/Stratos-Regular.woff2') format('woff2'),
+        url('../assets/style/fonts/Stratos-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
 .wrapper {
     width: 100%;
     min-height: 100%;
@@ -60,14 +55,15 @@ body {
     margin: 0 auto;
     position: relative;
     background-color: #181818;
-
+    padding: 30px;
 }
 
 .main {
     flex: 1 1 auto;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+}
+.main_content {
+    display: flex;
 }
 
 .nav {
@@ -77,15 +73,15 @@ body {
 }
 
  .centerblock {
-        width: auto;
-        flex-grow: 3;
-        padding: 20px 40px 20px 111px;
-    }
+    width: auto;
+    flex-grow: 3;
+    padding: 20px 40px 20px 50px;
+}
 
-  .sidebar {
-        max-width: 418px;
-        padding: 20px 90px 20px 78px;
-    }
+.sidebar {
+    max-width: 418px;
+    padding: 20px 90px 20px 78px;
+}
 
 .main_nav {
     width: 244px;
@@ -100,40 +96,8 @@ body {
     flex-direction: column;
 }
 
-._btn-text:hover {
-    border-color: #D9B6FF;
-    color: #D9B6FF;
-    cursor: pointer;
-}
-
-._btn-icon:hover svg {
-    fill: transparent;
-    stroke: #ACACAC;
-    cursor: pointer;
-}
-
-._btn-text:active {
-    border-color: #AD61FF;
-    color: #AD61FF;
-    cursor: pointer;
-}
-
-._btn-icon:active svg {
-    fill: transparent;
-    stroke: #FFFFFF;
-    cursor: pointer;
-
-}
-
-._btn-icon:active .track-play__like-svg,
-._btn-icon:active .track-play__dislike-svg {
-    fill: #696969;
-    stroke: #FFFFFF;
-    cursor: pointer;
-}
-
 .logo {
-    background-image: url("../img/logo.png");
+    background-image: url("../assets/img/logo.png");
     background-size: contain;
     background-repeat: no-repeat;
     margin-top: 10px; 
