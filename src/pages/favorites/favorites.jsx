@@ -11,8 +11,6 @@ fetch(`https://painassasin.online/catalog/selection/${id}`)
     return (
         <div>
             <h1>Избранные</h1>
-            {/* <CenterblockContent/> */}
-            
         </div>
     )
 }
